@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: linear-gradient(0.25turn, #ca0357, #9b0882, #8f098b, #722390);
+  --button-color: #d4145a;
+  --form-bg-color: #580066;
+  --form-border-color: #8e398b;
+  --card-font-color: #fba5e9;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-image: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 50vw;
+  height: auto;
+
+  padding: 2rem;
+  margin: 1rem;
+
+  background-color: var(--form-bg-color);
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-container {
+  padding: .4rem;
+  margin: .5rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Gotham', Helvetica, sans-serif;
+  font-size: 3rem;
+  color: #fff;
+
+  margin: 2rem;
+}
+
+h2 {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin: .5rem;
+}
+
+label {
+  font-family: 'Gotham', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+
+input,
+select {
+  width: 25vw;
+  height: 50px;
+
+  padding: .5rem;
+
+  font-size: 1.5rem;
+  border: 4px solid var(--form-border-color);
+}
+
+.form-btn {
+  background-color: var(--button-color);
+  color: #fff;
+
+  font-size: 1.7rem;
+  font-family: 'Gotham', Helvetica, sans-serif;
+  font-weight: 300;
+
+  width: 450px;
+  height: 50px;
+
+  border: 1px solid var(--form-border-color);
+
+  cursor: pointer;
+}
+
+.form-btn:hover {
+  background-color: #861b42;
+}
+
+.loading {
+  font-family: 'Gotham', sans-serif;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100px;
+}
+
+.modal-container {
+  max-width: 600px;
+  width: 100%;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+}
+
+.btn-container {
+  display: flex;
+  padding: 1rem;
+}
+
+.btn-container button {
+  width: 100%;
+  margin: .5rem;
+  padding: 16px 0;
+  border: none;
+  color: #fff;
+}
+
+.btn-accept {
+  background-color: var(--button-color);
+  color: #fff;
+}
+
+.formList-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-card {
+  width: 30vw;
+  height: auto;
+
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px var(--form-bg-color);
+  background-color: #212121;
+
+  padding: 1rem;
+  margin: 1rem;
+
+  font-size: 1.5rem;
+  color: var(--card-font-color);
+}
+
+.icon {
+  margin-right: .5rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 810px) {
+
+  h1 {
+    font-size: 2rem;
+    margin: .5rem;
+  }
+
+  .form-container {
+    width: 85vw;
+    height: auto;
+
+    padding: 2rem;
+    margin: 1rem;
+
+    background-color: var(--main-bg-color);
+    color: #fff;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  label {
+    font-family: 'Gotham', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+  }
+
+  input,
+  select {
+    width: 75vw;
+    height: 50px;
+
+    padding: .5rem;
+
+    font-size: 1.5rem;
+    border: 4px solid var(--form-border-color);
+  }
+
+  .form-btn {
+    background-color: var(--button-color);
+    color: #fff;
+
+    font-size: 1.4rem;
+    font-family: 'Gotham', Helvetica, sans-serif;
+    font-weight: 300;
+
+    width: 200px;
+    height: 60px;
+
+    border: 1px solid var(--form-border-color);
+    margin-bottom: 1rem;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-card {
+    width: 90vw;
+    height: auto;
+
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px var(--form-bg-color);
+    background-color: #212121;
+
+    padding: 1rem;
+    margin: 1rem;
+
+    font-size: 1.4rem;
+    color: var(--card-font-color);
+  }
+}
