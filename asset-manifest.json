@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/challenge-gd-list/static/css/main.38a5858c.css",
+    "main.js": "/challenge-gd-list/static/js/main.10c0c246.js",
+    "static/js/787.d7e7b795.chunk.js": "/challenge-gd-list/static/js/787.d7e7b795.chunk.js",
+    "index.html": "/challenge-gd-list/index.html",
+    "main.38a5858c.css.map": "/challenge-gd-list/static/css/main.38a5858c.css.map",
+    "main.10c0c246.js.map": "/challenge-gd-list/static/js/main.10c0c246.js.map",
+    "787.d7e7b795.chunk.js.map": "/challenge-gd-list/static/js/787.d7e7b795.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38a5858c.css",
+    "static/js/main.10c0c246.js"
+  ]
+}
